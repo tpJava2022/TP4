@@ -24,6 +24,7 @@ public class VerificateurJouet implements Runnable {
 	public void run() {
 		// TODO Auto-generated method stub
 		j.tuEstVerifiePar(this);
+		
 	}
 	
 
