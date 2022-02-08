@@ -14,7 +14,7 @@ public class Jouet {
 		System.out.println(V.getNom() + " a commencé  de verifier le jouet N°"+num);
 		Thread.currentThread();
 		try {
-		     Thread.sleep(500);
+		     Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

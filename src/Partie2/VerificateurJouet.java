@@ -6,9 +6,9 @@ public class VerificateurJouet implements Runnable {
 
 	String Nom;
 	Jouet j;
-	public VerificateurJouet(String n, Jouet J){
+	
+	public VerificateurJouet(String n){
 		this.Nom = n;
-		this.j=J; 
 	}
 	
 	
@@ -18,10 +18,11 @@ public class VerificateurJouet implements Runnable {
 	public void setNom(String nom) {
 		Nom = nom;
 	}
+	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		j.tuEstVerifiePar(this);
+		for(int i=0; i<4; i++)
+		Simulation.lesJouets[i].tuEstVerifiePar(this);
 	}
 	
 

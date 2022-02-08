@@ -1,26 +1,35 @@
-package Partie3;
+package Partie_Finale;
 
 
 public class VerificateurJouet implements Runnable {
 
-	String Nom;
+	private String Nom;
 	
-	int niveau;
+	private boolean niveau;
 	int vitesse;
 	
-	public VerificateurJouet(String n){
+	public VerificateurJouet(String n, boolean ni){
 		this.Nom = n;
+		this.niveau = ni;
 		 
 	}
-	
-	
 	
 	public String getNom() {
 		return Nom;
 	}
+	
 	public void setNom(String nom) {
 		Nom = nom;
 	}
+	
+	public boolean isNiveau() {
+		return niveau;
+	}
+
+	public void setNiveau(boolean niveau) {
+		this.niveau = niveau;
+	}
+
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub

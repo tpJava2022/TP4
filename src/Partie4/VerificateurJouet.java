@@ -8,6 +8,7 @@ public class VerificateurJouet extends Thread {
 	private Jouet j;
 	private int niveau;
 	private int vitesse;
+	
 	public VerificateurJouet(String n, int niv, int vit){
 		this.Nom = n;
 		

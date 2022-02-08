@@ -24,13 +24,7 @@ public class Simulation {
            T2.setJ(lesJouets[j]);
          T3.setJ(lesJouets[j]);
          
-         T1.start();  
-         T3.start();
-         T2.start();
-
         
-          
-          
         
 		}
 		T1.start();  
